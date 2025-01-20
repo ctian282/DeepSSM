@@ -11,14 +11,14 @@ The emulator is built on [Flax](https://github.com/google/flax). Use `conda`, `m
 
 ## Citation
 ```
-@article{2025deepssm,
-      title={DeepSSM: an emulator of gravitational wave spectra from sound waves during cosmological first-order phase transitions}, 
-      author={Chi Tian and Xiao Wang and Csaba Balázs},
-      year={2025},
-      eprint={2501.10244},
-      archivePrefix={arXiv},
-      primaryClass={astro-ph.CO},
-      url={https://arxiv.org/abs/2501.10244}, 
+@article{Tian:2025zlo,
+    author = "Tian, Chi and Wang, Xiao and Bal\'azs, Csaba",
+    title = "{DeepSSM: an emulator of gravitational wave spectra from sound waves during cosmological first-order phase transitions}",
+    eprint = "2501.10244",
+    archivePrefix = "arXiv",
+    primaryClass = "astro-ph.CO",
+    month = "1",
+    year = "2025"
 }
 ```
 
