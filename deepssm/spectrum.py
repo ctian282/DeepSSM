@@ -19,6 +19,9 @@ from .nn import ISSM_NN
 
 import warnings
 
+
+# The base path is two levels up from where the script resides
+
 # Classes
 class GWSpectrum:
     """Class for GW spectrum"""
@@ -28,13 +31,14 @@ class GWSpectrum:
         Initialize the class.
 
         """
-
+       
         # Dimensionless wave number: k / R_*
         self.K = np.logspace(-3,np.log10(300),100)
 
         # load the NN model
+        base_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../'))
         self.model, self.graphdef, self.state = \
-            self.load_model('../models/model_dict', hidden_sizes=(512,512), from_dict=True)
+            self.load_model(base_path + '/models/model_dict', hidden_sizes=(512,512), from_dict=True)
 
     # load NN model
     def load_model(self, model_path, hidden_sizes=(512,512), from_dict=False):
